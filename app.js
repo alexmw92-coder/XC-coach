@@ -459,6 +459,8 @@ function loadGame(){
   }catch(e){ alert('Load failed: ' + e.message); }
 }
 
+console.log("BUTTONS READY:", document.getElementById('btn-meet'), document.getElementById('view-meet'));
+
 // UI wiring
 document.getElementById('btn-dashboard').addEventListener('click', ()=>showView('view-dashboard'));
 document.getElementById('btn-roster').addEventListener('click', ()=>showView('view-roster'));
