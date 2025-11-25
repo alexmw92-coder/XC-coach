@@ -460,12 +460,12 @@ function loadGame(){
 }
 
 // UI wiring
-document.getElementById('btn-dashboard').addEventListener('click', ()=>showView('dashboard'));
-document.getElementById('btn-roster').addEventListener('click', ()=>showView('roster'));
-document.getElementById('btn-scholarships').addEventListener('click', ()=>showView('scholarships'));
-document.getElementById('btn-career').addEventListener('click', ()=>showView('career'));
-document.getElementById('btn-rankings').addEventListener('click', ()=>showView('rankings'));
-document.getElementById('btn-meet').addEventListener('click', ()=>showView('meet'));
+document.getElementById('btn-dashboard').addEventListener('click', ()=>showView('view-dashboard'));
+document.getElementById('btn-roster').addEventListener('click', ()=>showView('view-roster'));
+document.getElementById('btn-scholarships').addEventListener('click', ()=>showView('view-scholarships'));
+document.getElementById('btn-career').addEventListener('click', ()=>showView('view-career'));
+document.getElementById('btn-rankings').addEventListener('click', ()=>showView('view-rankings'));
+document.getElementById('btn-meet').addEventListener('click', ()=>showView('view-meet'));
 
 document.getElementById('advance-week').addEventListener('click', ()=>{ advanceWeek(); });
 document.getElementById('autosim').addEventListener('click', ()=>{ autoSimToNextMeet(); });
