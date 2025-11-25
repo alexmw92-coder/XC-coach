@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>XC Coach — Career v3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>XC Coach — Career v3</h1>
+      <div id="coach-info">
+        <div>Coach: <span id="coach-name">You</span></div>
+        <div>Program: <span id="program-name">Hometown U</span></div>
+        <div>Season: <span id="season">2025</span></div>
+        <div>Week: <span id="week">1</span></div>
+      </div>
+    </header>
+
+    <main>
+      <nav>
+        <button id="btn-dashboard" class="nav-btn">Dashboard</button>
+        <button id="btn-roster" class="nav-btn">Roster</button>
+        <button id="btn-scholarships" class="nav-btn">Scholarships</button>
+        <button id="btn-career" class="nav-btn">Career</button>
+        <button id="btn-rankings" class="nav-btn">Rankings</button>
+        <button id="btn-meet" class="nav-btn">Meet</button>
+      </nav>
+
+      <section id="view-dashboard" class="view active">
+        <h2>Snapshot</h2>
+        <div id="snapshot"></div>
+        <div class="controls">
+          <button id="advance-week">Advance 1 Week</button>
+          <button id="autosim">Auto-sim to Next Meet</button>
+        </div>
+        <div id="season-log"></div>
+      </section>
+
+      <section id="view-roster" class="view">
+        <h2>Roster</h2>
+        <div id="scholar-summary"></div>
+        <table id="roster-table">
+          <thead><tr><th>Name</th><th>Year</th><th>Endurance</th><th>Fatigue</th><th>Potential</th><th>Scholar%</th><th>Training</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section id="view-scholarships" class="view">
+        <h2>Scholarship Management</h2>
+        <p>Scholarship pool: <strong>12 scholarships</strong> (simulated as 1200 percentage points)</p>
+        <div id="scholar-list"></div>
+        <button id="auto-distribute">Auto-distribute equally</button>
+      </section>
+
+      <section id="view-career" class="view">
+        <h2>Career & Contracts</h2>
+        <div id="career-info"></div>
+        <h3>Job Offers</h3>
+        <div id="job-offers"></div>
+        <h3>Current Contract</h3>
+        <div id="current-contract"></div>
+      </section>
+
+      <section id="view-rankings" class="view">
+        <h2>Rankings & NCAA Projection</h2>
+        <div id="ranking-summary"></div>
+        <div id="atlarge-projection"></div>
+      </section>
+
+      <section id="view-meet" class="view">
+        <h2>Meet Day</h2>
+        <div id="meet-info"></div>
+        <div id="lineup"></div>
+        <div style="margin-top:8px;"><button id="simulate-meet">Simulate Meet</button></div>
+        <div id="meet-result"></div>
+      </section>
+
+    </main>
+
+    <footer>
+      <small>v3 — Contracts (Option B), Scholarships (Option A), At-large (Hybrid)</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

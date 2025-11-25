@@ -1,0 +1,1 @@
+Open index.html in your browser (Chrome/Firefox/Safari). This prototype supports contracts (4-6 years), scholarship management (12 scholarships = 1200 pct), and a hybrid at-large projection system.
